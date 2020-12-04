@@ -162,6 +162,7 @@ div.footer img.position-absolute:hover {
 
 main {
   background-color: #EEF0F1;
+  width: 103%;
 }
 
 main .nav-tabs {
@@ -453,6 +454,10 @@ main .nav-tabs {
   height: auto;
 }
 
+.user-name {
+  margin-left: 8px;
+}
+
 .right-boxes ul li {
   background-color: #f9fafa;
 }
@@ -478,5 +483,9 @@ main .nav-tabs {
 
 .discuss-podcast {
   font-size: 1rem;
+}
+
+.mt-6 {
+  margin-top: 90px;
 }
 /*# sourceMappingURL=style.css.map */
