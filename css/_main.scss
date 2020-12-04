@@ -67,7 +67,11 @@ main .nav-tabs{
     color: rgb(81, 88, 95);/****CLASE GENERAL****/
     margin-bottom: -10px;
 }
-.single-post date{
+.single-post p:hover, .date:hover{
+    color: rgb(8, 9, 10);/****CLASE GENERAL****/
+}
+.single-post .date{
+    padding-top: 8px;
     font-size: 13px;
     color: rgb(114, 122, 135);
 }
@@ -146,7 +150,7 @@ main .nav-tabs{
     border: 1px rgb(216, 218, 222) solid;/****CLASE GENERAL****/
 }
 
-.media>img{
+.post-profile-picture{
     width: 32px;
     height: 32px;
     border-radius: 40px;
@@ -184,6 +188,165 @@ main .nav-tabs{
     .nav-links {
         font-size: 0.8rem;
         padding: 14px 7px;
+    }
+
+}
+
+.inside-single-post{
+    padding: 15px;
+    background-color: white;
+    border: 1px rgb(216, 218, 222) solid;/****CLASE GENERAL****/
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.inside-post{
+    margin-bottom: 50px;
+}
+.inside-post-image{
+    width: 100%;
+    max-height: 330px;
+    border-radius: 5px 5px 0 0;
+    border: 1px rgb(216, 218, 222) solid;/****CLASE GENERAL****/
+}
+
+.inside-post h1{
+    color: rgb(8, 9, 10);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+
+}
+.inside-post a{
+    color: #1395b8;
+    text-decoration: none;
+}
+.inside-post .media-body{
+    padding: 2rem 4rem;
+}
+
+.inside-post .post-profile-picture{
+    margin-right: 10px;
+}
+.profile{
+    margin-bottom: 50px;
+}
+.profile p{
+    margin-bottom: 0;
+}
+.profile .name{
+    padding-right: 30px;
+}
+.badge{
+    font-weight: 500;
+}
+
+.badge-1{
+    background-color: #1E38BB;
+    color: #FFDF5B;
+    padding:8px;
+    &:hover{
+        cursor: pointer;
+    }
+    span{
+        opacity: 0.4;
+    }
+}
+.badge-2{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding:8px;
+    &:hover{
+        cursor: pointer;
+    }
+    span{
+        opacity: 0.4;
+    }
+}
+.badge-3{
+    background-color: transparent;
+    color: grey;
+    padding:8px;
+    &:hover{
+        cursor: pointer;
+        color: black;
+    }
+    span{
+        opacity: 0.4;
+    }
+}
+.badge-4{
+    background-color: #FEFFA5;
+    color: #b30047;
+    padding:8px;
+    &:hover{
+        cursor: pointer;
+    }
+    span{
+        opacity: 0.4;
+    }
+}
+
+.code-block{
+    background-color: black;
+    padding: 30px;
+    border-radius: 5px;
+}
+.discussion h2{
+    color: #202428;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.discussion-title{
+    margin: 50px 0;
+}
+.discussion textarea {
+    width: 100%;
+    height: 9vh;
+    padding: 15px;
+    background-color: #F9FAFA;
+    cursor: pointer;
+    border: 1px rgb(216, 218, 222) solid;/****CLASE GENERAL****/
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.discussion textarea:focus {
+border: 2px solid #3B49DF;
+-webkit-box-shadow: 1px 1px #3B49DF;
+box-shadow: 1px 1px #3B49DF;
+outline: 0;
+}
+.comment{
+    padding: 15px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px rgb(216, 218, 222) solid;/****CLASE GENERAL****/
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.comment header .btn-secondary{
+
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: rgb(216, 218, 222);
+    border: none;
+    &:hover{
+        background-color: rgb(216, 218, 222);
+        color: rgb(8, 9, 10);
+    }
+
+}
+.discussion-title .btn-secondary{
+    background-color: transparent;
+    color: rgb(8, 9, 10);
+    padding: 0 15px;
+    border: 2px rgb(216, 218, 222) solid;/****CLASE GENERAL****/
+    box-shadow: 1px 2px 3px rgb(216, 218, 222);
+    &:hover{
+    border:  2px rgb(181, 184, 187) solid;
+    background-color: #F9FAFA;
     }
 
 }

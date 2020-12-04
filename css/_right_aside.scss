@@ -32,3 +32,15 @@
 .mt-6{
     margin-top: 90px;
 }
+@media (max-width: 575.98px) {
+    .mt-6{
+        margin-top: 125px;
+    }
+    .inside-post h1{
+        font-size: 1.875rem;
+
+    }
+    .inside-post .media-body {
+        padding: 0;
+    }
+ }
