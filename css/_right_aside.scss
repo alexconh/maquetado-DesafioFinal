@@ -1,0 +1,30 @@
+.right-boxes {
+
+    ul {
+        li {
+            background-color: #f9fafa;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+
+            button{
+                background-color: #3b49df;
+                color: white;
+            }
+        }
+        li:hover {
+            background-color: #fff;
+            color: blue;
+        }
+        
+        li:hover a {
+            color: blue;
+        }
+
+    }
+}
+
+.discuss-podcast {
+    font-size: 1rem;
+}
