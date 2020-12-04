@@ -66,6 +66,58 @@ div.footer img.position-absolute:hover {
           transform: rotate(-6deg);
 }
 
+.leftAside {
+  color: black;
+}
+
+.leftAside:hover {
+  background-color: #E2E4E6;
+  color: #323EBE;
+}
+
+.profilePic {
+  border-radius: 100%;
+}
+
+.padding-left-aside {
+  padding-left: 2.5rem;
+}
+
+.padding-header-my-tags {
+  padding: 0.5rem;
+}
+
+.my-tags {
+  margin-bottom: 0;
+}
+
+.padding-my-tags {
+  padding: 0.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.stickers-color {
+  color: #3B49DF;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  font-size: x-large;
+  line-height: 0;
+}
+
+.plain:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.stickers-collage {
+  width: 205px;
+  height: auto;
+}
+
 .right-boxes ul li {
   background-color: #f9fafa;
 }
