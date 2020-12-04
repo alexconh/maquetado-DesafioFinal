@@ -1,0 +1,23 @@
+.avatar {
+    span {
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        img {
+            position: relative;
+            top: -15px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.header-primary {
+    background-color: $highlight-color;
+}
+
+.avatar-description {
+    a {
+        color: $highlight-color!important;
+    }
+} 

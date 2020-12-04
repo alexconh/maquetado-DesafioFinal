@@ -496,4 +496,25 @@ main .nav-tabs {
 .mt-6 {
   margin-top: 90px;
 }
+
+.avatar span {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+}
+
+.avatar span img {
+  position: relative;
+  top: -15px;
+  width: 100%;
+  height: 100%;
+}
+
+.header-primary {
+  background-color: #3B49DF;
+}
+
+.avatar-description a {
+  color: #3B49DF !important;
+}
 /*# sourceMappingURL=style.css.map */
