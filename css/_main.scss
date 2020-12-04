@@ -1,0 +1,189 @@
+
+main{
+    background-color: $bg-color;
+}
+main .nav-tabs{
+    max-width: 600px;
+    margin-bottom: 20px;
+    border: none;
+    position: relative;
+}
+.nav-item{
+    position: relative;
+}
+.nav-links{
+    color: $inactive-gray;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 14px 10px;
+    background: transparent;
+    border-radius: 5px;
+    margin-right: 6px;
+
+}
+.nav-tabs li:nth-child(6){
+    margin-right: -5px;
+}
+.nav-links:hover{
+    color: $highlight-color;/****CLASE GENERAL****/
+    background: rgb(224, 226, 241);
+    text-decoration: none;
+    border: none;
+}
+.linea {
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: 17%;
+    width: 60%;
+    height: 3px;
+    background: $highlight-color;
+    transition: all 200ms ease-in;
+}
+.nav-links.active:hover .linea{
+    left: 0%;
+    width: 90%;
+
+}
+.navbar-heading{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.single-post{
+    padding: 15px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px rgb(216, 218, 222) solid;/****CLASE GENERAL****/
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.single-post:active{
+    border: 1px solid  $highlight-color;
+}
+.single-post p{
+    font-size: 16px;
+    margin-bottom: -8px;
+    color: rgb(81, 88, 95);/****CLASE GENERAL****/
+    margin-bottom: -10px;
+}
+.single-post date{
+    font-size: 13px;
+    color: rgb(114, 122, 135);
+}
+.single-post h2{
+    color: rgb(8, 9, 10);/****CLASE GENERAL****/
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.single-post h2:hover{
+    color: $highlight-color;/****CLASE GENERAL****/
+}
+.single-post .tag-list{
+    font-size: 0.876rem;
+}
+.single-post .actions{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+.single-post .actions li{
+    padding: 3px 8px 3px 0px;
+    color: rgb(66, 71, 78);
+}
+.single-post .actions li:hover{
+    background-color: rgb(247, 247, 247);/****CLASE GENERAL****/
+    color: rgb(8, 9, 10);/****CLASE GENERAL****/
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);/****CLASE GENERAL****/
+}
+.post-intro-image{
+    width: 100%;
+    max-height: 275px;
+    border-radius: 5px 5px 0 0;
+    border: 1px rgb(216, 218, 222) solid;/****CLASE GENERAL****/
+}
+
+.actions span{
+    padding-left: 4px;
+}
+
+.post-link{
+    list-style: none!important;
+    color: $inactive-gray-light;
+    text-decoration: none;
+}
+.post-link:hover{
+    list-style: none!important;
+    color: #08090a!important;
+    text-decoration: none;
+}
+
+.reading{
+    color: rgb(114, 122, 135);/****CLASE GENERAL****/
+    margin-right: 10px;
+    padding-top: 8px;
+    font-size: 13px;
+    min-width: 70px;
+}
+.single-post button{
+    background-color: rgb(216, 218, 222);/****CLASE GENERAL****/
+    font-size: 17px;
+    color: rgb(66, 71, 78);
+    max-height: 42px;
+    margin-top: -3px;
+    border: none;
+}
+.single-post button:hover{
+    background: rgb(190, 195, 201);/****CLASE GENERAL****/
+    color: rgb(8, 9, 10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.first-post .single-post{
+    border-radius: 0 0 5px 5px;
+    border: 1px rgb(216, 218, 222) solid;/****CLASE GENERAL****/
+}
+
+.media>img{
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    margin-top: 4px;
+}
+.tag-list{
+    display: flex;
+    list-style: none;
+    color: rgb(114, 122, 135);
+}
+.tag-list li{
+    padding-left: 15px;
+}
+.tag-list li:hover{
+    color: rgb(8, 9, 10);
+    cursor: pointer;
+}
+.tag-list li:first-of-type{
+    padding-left: 0px;
+}
+.tag-list li span{
+    color: rgb(114, 122, 135);
+}
+.post-buttons, .post-buttons .actions{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.right-post-buttons{
+    display: flex;
+    align-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-links {
+        font-size: 0.8rem;
+        padding: 14px 7px;
+    }
+
+}

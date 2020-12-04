@@ -1,9 +1,8 @@
 @import 'variables';
+@import 'base';
 @import 'mixins';
+@import 'navBar';
 @import 'footer';
+@import 'main';
 @import 'leftAside';
-@import "right_aside";
-
-body{
-    background-color: #eef0f1;
-}
+@import 'right_aside';
