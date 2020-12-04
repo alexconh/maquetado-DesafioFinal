@@ -60,18 +60,312 @@
             <div class="container">
                 <div class="row">
                     <div class="col d-none d-md-block col-md-4 col-lg-3">
-                        <aside class="aside-left">item</aside>
+                        <!-- <aside class="aside-left">item</aside> -->
+                        <div class="nav flex-column nav-pills mb-6" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a class="nav-link leftAside d-flex" id="v-pills-profile-tab" data-toggle="pill"
+                                href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">
+                                <img class="profilePic" src="/assets/images/Alex.jpg" alt="" width="48" height="48">
+                                <div>
+                                    <h5 class="mb-0">alexconh</h5>
+                                    <small>@alexconh</small>
+                                </div>
+                            </a>
+                            <a class="nav-link leftAside" id="v-pills-readingList-tab" data-toggle="pill"
+                                href="#v-pills-readingList" role="tab" aria-controls="v-pills-readingList"
+                                aria-selected="false"><img src="/assets/icons/reading-list.svg" alt=""> Reading List</a>
+                            <a class="nav-link leftAside" id="v-pills-podcasts-tab" data-toggle="pill"
+                                href="#v-pills-podcasts" role="tab" aria-controls="v-pills-podcasts"
+                                aria-selected="false"><img src="/assets/icons/podcast.svg" alt=""> Podcasts</a>
+                            <a class="nav-link leftAside" id="v-pills-videos-tab" data-toggle="pill"
+                                href="#v-pills-videos" role="tab" aria-controls="v-pills-videos"
+                                aria-selected="false"><img src="/assets/icons/videos.svg" alt=""> Videos</a>
+                            <a class="nav-link leftAside" id="v-pills-tags-tab" data-toggle="pill" href="#v-pills-tags"
+                                role="tab" aria-controls="v-pills-tags" aria-selected="false"><img
+                                    src="/assets/icons/tags.svg" alt=""> Tags</a>
+                            <a class="nav-link leftAside" id="v-pills-more-tab" data-toggle="pill" href="#v-pills-more"
+                                role="tab" aria-controls="v-pills-more" aria-selected="false">
+                                <small class="padding-left-aside">More...</small>
+                            </a>
+                        </div>
+                        <div class="nav flex-column nav-pills mb-6" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <header class="d-flex justify-content-between align-items-center padding-header-my-tags">
+                                <h5 class="my-tags">My tags</h5>
+                                <a class="leftAside padding-my-tags" href="index.html"><img
+                                        src="/assets/icons/my-tags.svg" alt=""></a>
+                            </header>
+                            <a class="nav-link pl-2 leftAside" id="v-pills-javascript-tab" data-toggle="pill"
+                                href="#v-pills-javascript" role="tab" aria-controls="v-pills-javascript"
+                                aria-selected="false">#javascript</a>
+                            <a class="nav-link pl-2 leftAside" id="v-pills-python-tab" data-toggle="pill"
+                                href="#v-pills-python" role="tab" aria-controls="v-pills-python"
+                                aria-selected="false">#python</a>
+                            <a class="nav-link pl-2 leftAside" id="v-pills-machinelearning-tab" data-toggle="pill"
+                                href="#v-pills-machinelearning" role="tab" aria-controls="v-pills-machinelearning"
+                                aria-selected="false">#machinelearning</a>
+                            <a class="nav-link pl-2 leftAside" id="v-pills-git-tab" data-toggle="pill"
+                                href="#v-pills-git" role="tab" aria-controls="v-pills-git"
+                                aria-selected="false">#git</a>
+                            <a class="nav-link pl-2 leftAside" id="v-pills-ios-tab" data-toggle="pill"
+                                href="#v-pills-ios" role="tab" aria-controls="v-pills-ios"
+                                aria-selected="false">#ios</a>
+                            <a class="nav-link pl-2 leftAside" id="v-pills-django-tab" data-toggle="pill"
+                                href="#v-pills-django" role="tab" aria-controls="v-pills-django"
+                                aria-selected="false">#django</a>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a class="plain" href="index.html">
+                                <img class="stickers-collage" src="/assets/images/Sticker_Collage.png" alt="">
+                                <h2 class="stickers-color plain">Get Your Stickers!</h2>
+                                <br>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-8 col-lg-6">
-                        <main class="posts">item</main>
-                    </div>
-                    <div class="col d-none d-lg-block col-lg-3">
-                        <aside class="aside-right">item</aside>
-                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-5">
+                    <main class="posts">
+                        <div class="d-flex">
+                            <h1 class="navbar-heading align-self-start mr-auto ">Posts</h1>
+                            <div class="menu-main d-none d-sm-block">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-links active" href="#">Feed<span class="linea"></span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-links" href="#">Week</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-links" href="#">Month</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-links" href="#">Year</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-links" href="#">Infinity</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-links" href="#">Latest</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="first-post">
+                            <img src="assets/images/post.jpg" class="post-intro-image" alt="...">
+                            <article class="media single-post">
+                                <img src="assets/images/profilepicture.jpg" class="align-self-start mr-3" alt="...">
+                                <div class="media-body">
+                                    <p>Nick Brinner</p>
+                                    <date>Dec 3 (3 hours ago)</date>
+                                    <h2 class="mt-0">Good and Bad Practices of Coding in Python</h2>
+                                    <ul class="tag-list">
+                                        <li><a><span>#</span>funtional</a></li>
+                                        <li><a><span>#</span>python</a></li>
+                                        <li><a><span>#</span>testing</a></li>
+                                        <li><a><span>#</span>codequality</a></li>
+                                    </ul>
+                                    <div class="post-buttons">
+                                        <ul class="actions">
+                                            <li>
+                                                <a class="d-flex post-link">
+                                                    <img src="assets/icons/post-reaction-like.svg"> 11
+                                                    <span class="d-none d-md-block">reactions
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="d-flex post-link">
+                                                    <img src="assets/icons/post-comment.svg"> 2
+                                                    <span class="d-none d-md-block">comments
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="right-post-buttons">
+                                            <div class="reading">5 min read</div>
+                                            <button type="button" class="btn btn-secondary">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+                        <article class="media single-post">
+                            <img src="assets/images/user02.png" class="align-self-start mr-3" alt="...">
+                            <div class="media-body">
+                                <p>Nick Brinner</p>
+                                <date>Dec 3</date>
+
+                                <h2 class="mt-0">How to use Python Lambda functions: a 5 minute tutorial</h2>
+
+                                <ul class="tag-list">
+                                    <li><a><span>#</span>funtional</a></li>
+                                    <li><a><span>#</span>python</a></li>
+                                    <li><a><span>#</span>testing</a></li>
+                                </ul>
+                                <div class="post-buttons">
+                                    <ul class="actions">
+                                        <li>
+                                            <a class="d-flex post-link">
+                                                <img src="assets/icons/post-reaction-like.svg"> 14
+                                                <span class="d-none d-md-block">reactions</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex post-link">
+                                                <img src="assets/icons/post-comment.svg"> 8
+                                                <span class="d-none d-md-block">comments</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="right-post-buttons">
+                                        <div class="reading">5 min read</div>
+                                        <button type="button" class="btn btn-secondary">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="media single-post">
+                            <img src="assets/images/user03.png" class="align-self-start mr-3" alt="...">
+                            <div class="media-body">
+                                <p>Gracie Gregory</p>
+                                <date>Dec 1 </date>
+
+                                <h2 class="mt-0">How to use Python Lambda functions: a 5 minute tutorial</h2>
+
+                                <ul class="tag-list">
+                                    <li><a><span>#</span>funtional</a></li>
+                                    <li><a><span>#</span>python</a></li>
+                                    <li><a><span>#</span>testing</a></li>
+                                </ul>
+                                <div class="post-buttons">
+                                    <ul class="actions">
+                                        <li>
+                                            <a class="d-flex post-link">
+                                                <img src="assets/icons/post-reaction-like.svg"> 33
+                                                <span class="d-none d-md-block">reactions</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d-flex post-link">
+                                                <img src="assets/icons/post-comment.svg"> 14
+                                                <span class="d-none d-md-block">comments</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="right-post-buttons">
+                                        <div class="reading">5 min read</div>
+                                        <button type="button" class="btn btn-secondary">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </main>
+                </div>
+                <div class="col d-none d-lg-block col-lg-4">
+                    <aside class="aside-right">
+                        <div class="card p-3 mb-3">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="./assets/images/dev-discuss.jpg" alt="dev-discuss" class="card-img">
+                                </div>
+                                <div class="col card-text">
+                                    <div class="row">
+                                        <b class="discuss-podcast">Listen to the DevDiscuss Podcast</b>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <p>"Analogies & Visualizations w/ Lydia Hallie & Kevin Kononenko" <a href=""> →
+                                                tune
+                                                in!</a> </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card right-boxes mb-3">
+                            <div class="card-header d-flex justify-content-between">
+                                <h5>
+                                    <b>Listings</b>
+                                </h5> <a href="">See all</a>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href=".">
+                                        <div>The only guide you need to Master Modern JavaScript - 43% off</div>
+                                        <span class="text-muted">forsale</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a>
+                                        <div>🤖 Cyber Monday 50% Off Bootstrap Themes, Admin Templates, and UI Kits
+                                        </div>
+                                        <span class="text-muted">forsale</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a>
+                                        <div>🚨 Book Giveaway: Modern front-end architecture</div>
+                                        <span class="text-muted">education</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a>
+                                        <div>⚛️ Build your React app 10x faster</div>
+                                        <span class="text-muted">forsale</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a>
+                                        <div>WebSocket Deep Dive &amp; Code Review, Livestream Event</div>
+                                        <span class="text-muted">events</span>
+                                    </a>
+                                </li>
+                                </li>
+                            </ul>
+                            <div class="card-footer d-flex justify-content-center">
+                                Create a Listing
+                            </div>
+                        </div>
+
+                        <div class="card right-boxes mb-3">
+                            <div class="card-header d-flex ">
+                                <h5>
+                                    <b>#news</b>
+                                </h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="">Using SQL with Delta Lake [Create: Data]</a>
+                                    <button type="button" class="btn  btn-sm">New</button>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="">
+                                        <div>Learn from Data Breach</div>
+                                        <span class="text-muted">1 comment</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div>
+    </div> -->
     <div class="container-fluid footer position-relative px-3">
         <img src="assets/images/footer-perezoso.png" alt="perezoso-ilustración"
             class="d-none d-lg-block footer-perezoso position-absolute">
@@ -79,7 +373,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 font-weight-400 vw-100 py-3">
-                        <!-- <footer> -->
                         <!-- <img src="assets/images/footer-perezoso.png" alt="perezoso-ilustración" class="d-none d-lg-block footer-perezoso position-absolute"> -->
                         <nav class="footer-nav text-center p-2 px-lg-0">
                             <a href="#" class="d-inline-block p-2">Home</a>
@@ -150,7 +443,7 @@
                                 </a>
                             </div>
                         </nav>
-                        <hr class="footer-divider">
+                        <hr class="footer-divider mx-auto">
                         <div class="footer-info text-center">
                             <p><a href="#" class="font-weight-bolder">DEV Community</a> – A constructive and inclusive
                                 social network. Open source and
@@ -180,7 +473,6 @@
                                 </svg>
                             </a>
                         </div>
-                        <!-- </footer> -->
                     </div>
                 </div>
             </div>

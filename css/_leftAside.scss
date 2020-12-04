@@ -1,0 +1,51 @@
+.leftAside {
+    color: black;
+    &:hover {
+        background-color: $asideLeft-active-gray;
+        color: $highlight-active;
+    }
+}
+
+.profilePic {
+    border-radius: 100%;;
+}
+
+.padding-left-aside {
+    padding-left: 2.5rem;
+}
+
+.padding-header-my-tags {
+    padding: 0.5rem;
+}
+
+.my-tags{
+    margin-bottom: 0;
+}
+
+.padding-my-tags {
+    padding: 0.5rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.stickers-color {
+    color: $highlight-color;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    font-size: x-large;
+    line-height: 20px;
+}
+
+.plain {
+    &:hover {
+        text-decoration-line: none;
+    }
+}
+
+.stickers-collage {
+    width: 240px;
+    height: auto;
+}

@@ -1,18 +1,8 @@
 @import 'variables';
+@import 'base';
 @import 'mixins';
 @import 'navBar';
 @import 'footer';
-
-.btn-primary{
-    background-color: $highlight-color;
-    border: none;
-    &:hover{
-        background-color: $highlight-active;
-    }
-    &:focus{
-        outline:0;
-    }
-    &:active{
-        outline:0;
-    }
-}
+@import 'main';
+@import 'leftAside';
+@import 'right_aside';
