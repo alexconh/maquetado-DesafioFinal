@@ -791,8 +791,26 @@ main .nav-tabs {
   transition: padding 0,4s;
 }
 
-.right-boxes ul li {
+.right-boxes {
   background-color: #f9fafa;
+}
+
+.right-boxes .card-header {
+  background-color: #f9fafa;
+  border: 1px solid #eef0f1;
+}
+
+.right-boxes .card-footer {
+  background-color: #f9fafa;
+}
+
+.right-boxes a {
+  color: #3B49DF;
+}
+
+.right-boxes ul li {
+  background-color: #f9fafa !important;
+  border: 1px solid #eef0f1;
 }
 
 .right-boxes ul li a {
@@ -860,5 +878,9 @@ main .nav-tabs {
   color: #4D5760;
   font-size: 14px;
   font-weight: bolder;
+}
+
+.user-description {
+  font-size: 0.75rem;
 }
 /*# sourceMappingURL=style.css.map */
