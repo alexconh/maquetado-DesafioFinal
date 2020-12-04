@@ -1,0 +1,55 @@
+header.header-navbar{
+    nav.navbar{
+        background-color: white;
+        padding:10px auto;
+        a.dev-logo:hover{
+            svg{
+                fill:$logo-active;
+            }
+        }
+        img.navBar-profile-picture{
+            height: 40px;
+            width: 40px;
+            border: 5px solid transparent;
+            transition: border 0,2s;
+            &:hover{
+                border: 5px solid $navPosts-active;
+            }
+        }
+        .btn-nav{
+            height: 50px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        div.nav-left ~ div.nav-right{
+            height: 52px;
+        }
+        .nav-search{
+            height: 54px;
+            background-color: #F9FAFA;
+             &:focus{
+                border: 2px solid $highlight-color;
+                box-shadow:1px 1px $highlight-color;
+                outline:0;
+            }
+            &:active{
+                outline:0;
+            }
+        }
+        .nav-right{
+            .navBar-icon{
+                height: 44px;
+                margin-left: 15px;
+                &:last-of-type{
+                    margin-right: 15px;
+                }
+                &:hover{
+                    background-color: $navPosts-active;
+                    svg:hover{
+                        fill:black;
+                    }
+                }
+            }
+        }
+    }
+}

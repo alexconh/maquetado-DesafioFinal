@@ -1,3 +1,67 @@
+header.header-navbar nav.navbar {
+  background-color: white;
+  padding: 10px auto;
+}
+
+header.header-navbar nav.navbar a.dev-logo:hover svg {
+  fill: #363D44;
+}
+
+header.header-navbar nav.navbar img.navBar-profile-picture {
+  height: 40px;
+  width: 40px;
+  border: 5px solid transparent;
+  -webkit-transition: border 0,2s;
+  transition: border 0,2s;
+}
+
+header.header-navbar nav.navbar img.navBar-profile-picture:hover {
+  border: 5px solid #EEF0F1;
+}
+
+header.header-navbar nav.navbar .btn-nav {
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+header.header-navbar nav.navbar div.nav-left ~ div.nav-right {
+  height: 52px;
+}
+
+header.header-navbar nav.navbar .nav-search {
+  height: 54px;
+  background-color: #F9FAFA;
+}
+
+header.header-navbar nav.navbar .nav-search:focus {
+  border: 2px solid #3B49DF;
+  -webkit-box-shadow: 1px 1px #3B49DF;
+          box-shadow: 1px 1px #3B49DF;
+  outline: 0;
+}
+
+header.header-navbar nav.navbar .nav-search:active {
+  outline: 0;
+}
+
+header.header-navbar nav.navbar .nav-right .navBar-icon {
+  height: 44px;
+  margin-left: 15px;
+}
+
+header.header-navbar nav.navbar .nav-right .navBar-icon:last-of-type {
+  margin-right: 15px;
+}
+
+header.header-navbar nav.navbar .nav-right .navBar-icon:hover {
+  background-color: #EEF0F1;
+}
+
+header.header-navbar nav.navbar .nav-right .navBar-icon:hover svg:hover {
+  fill: black;
+}
+
 div.footer {
   background-color: #D8DBDF;
 }
@@ -64,5 +128,22 @@ div.footer img.position-absolute {
 div.footer img.position-absolute:hover {
   -webkit-transform: rotate(-6deg);
           transform: rotate(-6deg);
+}
+
+.btn-primary {
+  background-color: #3B49DF;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #323EBE;
+}
+
+.btn-primary:focus {
+  outline: 0;
+}
+
+.btn-primary:active {
+  outline: 0;
 }
 /*# sourceMappingURL=style.css.map */
