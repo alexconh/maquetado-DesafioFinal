@@ -1,5 +1,7 @@
 
-
+main{
+    background-color: $bg-color;
+}
 main .nav-tabs{
     max-width: 600px;
     margin-bottom: 20px;
@@ -10,7 +12,7 @@ main .nav-tabs{
     position: relative;
 }
 .nav-links{
-    color: rgb(66, 71, 78);
+    color: $inactive-gray;
     font-size: 0.9rem;
     font-weight: 500;
     padding: 14px 10px;
@@ -23,7 +25,7 @@ main .nav-tabs{
     margin-right: -5px;
 }
 .nav-links:hover{
-    color:rgb(74, 82, 222);/****CLASE GENERAL****/
+    color: $highlight-color;/****CLASE GENERAL****/
     background: rgb(224, 226, 241);
     text-decoration: none;
     border: none;
@@ -35,7 +37,7 @@ main .nav-tabs{
     left: 17%;
     width: 60%;
     height: 3px;
-    background: rgb(74, 82, 222);
+    background: $highlight-color;
     transition: all 200ms ease-in;
 }
 .nav-links.active:hover .linea{
@@ -50,13 +52,14 @@ main .nav-tabs{
 
 .single-post{
     padding: 15px;
+    background-color: white;
     cursor: pointer;
     border: 1px rgb(216, 218, 222) solid;/****CLASE GENERAL****/
     border-radius: 5px;
     margin-bottom: 10px;
 }
 .single-post:active{
-    border: 1px solid  rgb(64, 72, 193);
+    border: 1px solid  $highlight-color;
 }
 .single-post p{
     font-size: 16px;
@@ -75,7 +78,7 @@ main .nav-tabs{
     padding-top: 10px;
 }
 .single-post h2:hover{
-    color: rgb(64, 72, 193);/****CLASE GENERAL****/
+    color: $highlight-color;/****CLASE GENERAL****/
 }
 .single-post .tag-list{
     font-size: 0.876rem;
@@ -106,6 +109,18 @@ main .nav-tabs{
 .actions span{
     padding-left: 4px;
 }
+
+.post-link{
+    list-style: none!important;
+    color: $inactive-gray-light;
+    text-decoration: none;
+}
+.post-link:hover{
+    list-style: none!important;
+    color: #08090a!important;
+    text-decoration: none;
+}
+
 .reading{
     color: rgb(114, 122, 135);/****CLASE GENERAL****/
     margin-right: 10px;
@@ -163,4 +178,12 @@ main .nav-tabs{
 .right-post-buttons{
     display: flex;
     align-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-links {
+        font-size: 0.8rem;
+        padding: 14px 7px;
+    }
+
 }

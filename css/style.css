@@ -1,3 +1,16 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+main {
+  background-color: #EEF0F1;
+}
+
 main .nav-tabs {
   max-width: 600px;
   margin-bottom: 20px;
@@ -10,7 +23,7 @@ main .nav-tabs {
 }
 
 .nav-links {
-  color: #42474e;
+  color: #363D44;
   font-size: 0.9rem;
   font-weight: 500;
   padding: 14px 10px;
@@ -24,7 +37,7 @@ main .nav-tabs {
 }
 
 .nav-links:hover {
-  color: #4a52de;
+  color: #3B49DF;
   /****CLASE GENERAL****/
   background: #e0e2f1;
   text-decoration: none;
@@ -38,7 +51,7 @@ main .nav-tabs {
   left: 17%;
   width: 60%;
   height: 3px;
-  background: #4a52de;
+  background: #3B49DF;
   -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
@@ -55,6 +68,7 @@ main .nav-tabs {
 
 .single-post {
   padding: 15px;
+  background-color: white;
   cursor: pointer;
   border: 1px #d8dade solid;
   /****CLASE GENERAL****/
@@ -63,7 +77,7 @@ main .nav-tabs {
 }
 
 .single-post:active {
-  border: 1px solid #4048c1;
+  border: 1px solid #3B49DF;
 }
 
 .single-post p {
@@ -88,7 +102,7 @@ main .nav-tabs {
 }
 
 .single-post h2:hover {
-  color: #4048c1;
+  color: #3B49DF;
   /****CLASE GENERAL****/
 }
 
@@ -129,6 +143,18 @@ main .nav-tabs {
 
 .actions span {
   padding-left: 4px;
+}
+
+.post-link {
+  list-style: none !important;
+  color: #4D5760;
+  text-decoration: none;
+}
+
+.post-link:hover {
+  list-style: none !important;
+  color: #08090a !important;
+  text-decoration: none;
 }
 
 .reading {
@@ -213,6 +239,13 @@ main .nav-tabs {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-links {
+    font-size: 0.8rem;
+    padding: 14px 7px;
+  }
 }
 
 div.footer {
