@@ -65,4 +65,35 @@ div.footer img.position-absolute:hover {
   -webkit-transform: rotate(-6deg);
           transform: rotate(-6deg);
 }
+
+.right-boxes ul li {
+  background-color: #f9fafa;
+}
+
+.right-boxes ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.right-boxes ul li button {
+  background-color: #3b49df;
+  color: white;
+}
+
+.right-boxes ul li:hover {
+  background-color: #fff;
+  color: blue;
+}
+
+.right-boxes ul li:hover a {
+  color: blue;
+}
+
+.discuss-podcast {
+  font-size: 1rem;
+}
+
+body {
+  background-color: #eef0f1;
+}
 /*# sourceMappingURL=style.css.map */
