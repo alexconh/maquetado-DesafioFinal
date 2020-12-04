@@ -1,52 +1,99 @@
-.leftAside {
+div.footer {
+  background-color: #D8DBDF;
+}
+
+div.footer a {
   color: black;
 }
 
-.leftAside:hover {
-  background-color: #E2E4E6;
+div.footer a:hover {
   color: #323EBE;
+  text-decoration: none;
 }
 
-.profilePic {
-  border-radius: 100%;
+div.footer .footer-nav {
+  color: black;
+  font-size: 18px;
+  max-width: 728px;
+  margin: 0 auto;
 }
 
-.padding-left-aside {
-  padding-left: 2.5rem;
+@media only screen and (min-width: 768px) {
+  div.footer .footer-nav {
+    font-size: 20px;
+  }
 }
 
-.padding-header-my-tags {
-  padding: 0.5rem;
+div.footer .footer-social-media {
+  padding-top: 20px;
 }
 
-.my-tags {
-  margin-bottom: 0;
+div.footer .footer-social-media svg:hover {
+  fill: #4D5760;
 }
 
-.padding-my-tags {
-  padding: 0.5rem;
+div.footer hr.footer-divider {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 15%;
+  min-width: 50px;
+  max-width: 195px;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
+div.footer p {
+  font-size: 18px;
+  color: #4D5760;
+  max-width: 728px;
+  margin: 0 auto;
 }
 
-.stickers-color {
-  color: #3B49DF;
-  font-weight: bold;
-  margin: 0;
-  text-align: center;
-  font-size: x-large;
-  line-height: 0;
+div.footer p:last-of-type {
+  margin: 30px auto;
 }
 
-.plain:hover {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+div.footer img.position-absolute {
+  width: 52px;
+  top: -2px;
+  right: 38px;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-.stickers-collage {
-  width: 205px;
-  height: auto;
+div.footer img.position-absolute:hover {
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+
+.right-boxes ul li {
+  background-color: #f9fafa;
+}
+
+.right-boxes ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.right-boxes ul li button {
+  background-color: #3b49df;
+  color: white;
+}
+
+.right-boxes ul li:hover {
+  background-color: #fff;
+  color: blue;
+}
+
+.right-boxes ul li:hover a {
+  color: blue;
+}
+
+.discuss-podcast {
+  font-size: 1rem;
+}
+
+body {
+  background-color: #eef0f1;
 }
 /*# sourceMappingURL=style.css.map */

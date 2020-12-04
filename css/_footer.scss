@@ -1,0 +1,51 @@
+div.footer {
+    background-color: $footer-bg-color;    
+    a{
+        color:black;
+        &:hover{
+            color: $highlight-active;
+            text-decoration: none;
+        }
+    }
+    .footer-nav{
+        color: black;
+        font-size: 18px;
+        max-width: 728px;
+        margin: 0 auto;
+        @include tablet{
+            font-size: 20px;
+        }
+    }
+    .footer-social-media{
+        padding-top: 20px;
+        svg:hover{
+            fill: $inactive-gray-light;
+        }    
+    }
+    hr.footer-divider{
+        margin-top: 30px;
+        margin-bottom: 40px;
+        width:15%;
+        min-width: 50px;
+        max-width: 195px;
+    }
+    p{
+        font-size: 18px;
+        color: $inactive-gray-light;
+        max-width: 728px;
+        margin: 0 auto;
+        &:last-of-type{
+            margin: 30px auto;
+        }
+    }
+    img.position-absolute{
+        width: 52px;
+        top: -2px;
+        right: 38px;
+        transform-origin: center top;
+        transition: all 0.4s;
+        &:hover{
+            transform: rotate(-6deg);
+        }
+    }
+}
