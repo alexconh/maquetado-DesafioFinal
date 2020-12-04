@@ -22,3 +22,7 @@
 body{
     background-color: #eef0f1;
 }
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #E2E4E6;
+    color: #323EBE;
+}

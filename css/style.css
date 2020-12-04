@@ -28,6 +28,11 @@ body {
   background-color: #eef0f1;
 }
 
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #E2E4E6;
+  color: #323EBE;
+}
+
 header.header-navbar nav.navbar {
   background-color: white;
   padding: 10px auto;
@@ -162,7 +167,6 @@ div.footer img.position-absolute:hover {
 
 main {
   background-color: #EEF0F1;
-  width: 103%;
 }
 
 main .nav-tabs {
