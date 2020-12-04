@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: 1280px;
+}
+
 .btn-primary {
   background-color: #3B49DF;
   border: none;
