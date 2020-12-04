@@ -1,5 +1,6 @@
 .leftAside {
     color: black;
+
     &:hover {
         background-color: $asideLeft-active-gray;
         color: $highlight-active;
@@ -7,7 +8,8 @@
 }
 
 .profilePic {
-    border-radius: 100%;;
+    border-radius: 100%;
+    ;
 }
 
 .padding-left-aside {
@@ -18,7 +20,7 @@
     padding: 0.5rem;
 }
 
-.my-tags{
+.my-tags {
     margin-bottom: 0;
 }
 
@@ -49,6 +51,93 @@
     width: 240px;
     height: auto;
 }
-.user-name{
+
+
+.button-left-aside {
+    padding: 0.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    border: none;
+    // padding: 0.5rem;
+
+    &:hover {
+        .heart {
+            background-color: $heart-bg-active;
+            fill: $heart-active;
+        }
+
+        .unicorn {
+            background-color: $unicorn-bg-active;
+            fill: $unicorn-active;
+        }
+
+        .save {
+            background-color: $saved-bg-active;
+            fill: $saved-active;
+        }
+
+    }
+}
+
+.heart {
+    padding: 0.5rem;
+    border-radius: 100%;
+}
+
+.unicorn {
+    padding: 0.5rem;
+    border-radius: 100%;
+}
+
+.save {
+    padding: 0.5rem;
+    border-radius: 100%;
+}
+
+.more {
+    padding: 0.5rem;
+    border-radius: 100%;
+
+    &:hover {
+        background-color: $asideLeft-active-gray;
+        border-radius: 100%;
+    }
+}
+
+.bottom-navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    background-color: $bg-color;
+    z-index: 1;
+
+    .button-left-aside {
+        margin: 0;
+
+        &:hover {
+            .heart {
+                background-color: $heart-bg-active;
+                fill: $heart-active;
+            }
+
+            .unicorn {
+                background-color: $unicorn-bg-active;
+                fill: $unicorn-active;
+            }
+
+            .save {
+                background-color: $saved-bg-active;
+                fill: $saved-active;
+            }
+
+        }
+    }
+}
+
+.user-name {
     margin-left: 8px;
 }

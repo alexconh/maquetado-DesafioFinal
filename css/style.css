@@ -462,6 +462,90 @@ main .nav-tabs {
   height: auto;
 }
 
+.button-left-aside {
+  padding: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+  border: none;
+}
+
+.button-left-aside:hover .heart {
+  background-color: #ECDADA;
+  fill: #DC1818;
+}
+
+.button-left-aside:hover .unicorn {
+  background-color: #DAEEED;
+  fill: #26D9CA;
+}
+
+.button-left-aside:hover .save {
+  background-color: #DCDFEF;
+  fill: #3B49DF;
+}
+
+.heart {
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.unicorn {
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.save {
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.more {
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.more:hover {
+  background-color: #E2E4E6;
+  border-radius: 100%;
+}
+
+.bottom-navbar {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  background-color: #EEF0F1;
+  z-index: 1;
+}
+
+.bottom-navbar .button-left-aside {
+  margin: 0;
+}
+
+.bottom-navbar .button-left-aside:hover .heart {
+  background-color: #ECDADA;
+  fill: #DC1818;
+}
+
+.bottom-navbar .button-left-aside:hover .unicorn {
+  background-color: #DAEEED;
+  fill: #26D9CA;
+}
+
+.bottom-navbar .button-left-aside:hover .save {
+  background-color: #DCDFEF;
+  fill: #3B49DF;
+}
+
 .user-name {
   margin-left: 8px;
 }
