@@ -5,15 +5,16 @@
         width: 48px;
         img {
             position: relative;
-            top: -15px;
-            width: 100%;
-            height: 100%;
+            top: -20px;
+            width: 60px;
+            height: 60px;
         }
     }
 }
 
 .header-primary {
-    background-color: $highlight-color;
+    background-color:black;
+    height: 40px;
 }
 
 .avatar-description {
@@ -21,3 +22,10 @@
         color: $highlight-color!important;
     }
 } 
+.title-avatar{
+    span{
+        color: $inactive-gray-light;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+}

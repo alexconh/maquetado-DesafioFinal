@@ -39,7 +39,7 @@ body {
 
 header.header-navbar nav.navbar {
   background-color: white;
-  padding: 10px auto;
+  padding: 5px auto;
 }
 
 header.header-navbar nav.navbar a.dev-logo:hover svg {
@@ -47,8 +47,8 @@ header.header-navbar nav.navbar a.dev-logo:hover svg {
 }
 
 header.header-navbar nav.navbar img.navBar-profile-picture {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border: 5px solid transparent;
   -webkit-transition: border 0,2s;
   transition: border 0,2s;
@@ -99,6 +99,48 @@ header.header-navbar nav.navbar .nav-right .navBar-icon:hover {
 
 header.header-navbar nav.navbar .nav-right .navBar-icon:hover svg:hover {
   fill: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 2px solid black;
+  width: 250px;
+  min-width: 160px;
+  -webkit-box-shadow: 4px 4px black;
+          box-shadow: 4px 4px black;
+  z-index: 1;
+  right: 18px;
+}
+
+.dropdown-content span.pp-menu-user {
+  color: #B5BDC4;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #F2F2F3;
+  color: #323EBE;
+}
+
+.dropdown-content a:hover:first-of-type .pp-menu-user {
+  color: #B5BDC4;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 div.footer {
@@ -744,6 +786,11 @@ main .nav-tabs {
   margin-left: 8px;
 }
 
+.fix-padding {
+  -webkit-transition: padding 0,4s;
+  transition: padding 0,4s;
+}
+
 .right-boxes ul li {
   background-color: #f9fafa;
 }
@@ -795,16 +842,23 @@ main .nav-tabs {
 
 .avatar span img {
   position: relative;
-  top: -15px;
-  width: 100%;
-  height: 100%;
+  top: -20px;
+  width: 60px;
+  height: 60px;
 }
 
 .header-primary {
-  background-color: #3B49DF;
+  background-color: black;
+  height: 40px;
 }
 
 .avatar-description a {
   color: #3B49DF !important;
+}
+
+.title-avatar span {
+  color: #4D5760;
+  font-size: 14px;
+  font-weight: bolder;
 }
 /*# sourceMappingURL=style.css.map */
