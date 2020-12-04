@@ -13,11 +13,15 @@
 }
 
 .header-primary {
-    background-color: $highlight-color;
+    background-color: $highlight-color!important;
 }
 
 .avatar-description {
     a {
         color: $highlight-color!important;
     }
+} 
+
+.user-description{
+    font-size: 0.75rem;
 } 

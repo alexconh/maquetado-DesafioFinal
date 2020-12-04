@@ -744,8 +744,26 @@ main .nav-tabs {
   margin-left: 8px;
 }
 
-.right-boxes ul li {
+.right-boxes {
   background-color: #f9fafa;
+}
+
+.right-boxes .card-header {
+  background-color: #f9fafa;
+  border: 1px solid #eef0f1;
+}
+
+.right-boxes .card-footer {
+  background-color: #f9fafa;
+}
+
+.right-boxes a {
+  color: #3B49DF;
+}
+
+.right-boxes ul li {
+  background-color: #f9fafa !important;
+  border: 1px solid #eef0f1;
 }
 
 .right-boxes ul li a {
@@ -801,10 +819,14 @@ main .nav-tabs {
 }
 
 .header-primary {
-  background-color: #3B49DF;
+  background-color: #3B49DF !important;
 }
 
 .avatar-description a {
   color: #3B49DF !important;
+}
+
+.user-description {
+  font-size: 0.75rem;
 }
 /*# sourceMappingURL=style.css.map */
