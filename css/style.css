@@ -265,6 +265,19 @@ main .nav-tabs {
   width: 90%;
 }
 
+.nav-links-icon {
+  color: #363D44;
+  padding: 5px 10px;
+  margin-right: 6px;
+}
+
+.nav-links-icon:hover {
+  color: #3B49DF;
+  /****CLASE GENERAL****/
+  background: #e0e2f1;
+  text-decoration: none;
+}
+
 .navbar-heading {
   font-size: 1.25rem;
   font-weight: 700;
@@ -292,14 +305,14 @@ main .nav-tabs {
   margin-bottom: -10px;
 }
 
-.single-post p:hover, .date:hover {
+.single-post p:hover {
   color: #08090a;
   /****CLASE GENERAL****/
 }
 
 .single-post .date {
   padding-top: 8px;
-  font-size: 13px;
+  font-size: 0.875rem;
   color: #727a87;
 }
 
@@ -458,6 +471,12 @@ main .nav-tabs {
   }
 }
 
+.date {
+  padding-top: 8px;
+  font-size: 0.875rem;
+  color: #727a87;
+}
+
 .inside-single-post {
   padding: 15px;
   background-color: white;
@@ -508,8 +527,15 @@ main .nav-tabs {
   margin-bottom: 0;
 }
 
-.profile .name {
-  padding-right: 30px;
+.profile-user .name {
+  padding-top: 7px;
+  padding-right: 15px;
+  font-weight: 500;
+}
+
+.profile-user .name:hover {
+  color: #1E38BB;
+  cursor: pointer;
 }
 
 .badge {
@@ -646,6 +672,18 @@ main .nav-tabs {
   background-color: #F9FAFA;
 }
 
+@media (max-width: 767.98px) {
+  .inside-post .media-body {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .inside-post .media-body {
+    padding: 1rem !important;
+  }
+}
+
 .leftAside {
   color: black;
 }
@@ -770,6 +808,7 @@ main .nav-tabs {
 
 .bottom-navbar .button-left-aside {
   margin: 0;
+  background-color: none;
 }
 
 .bottom-navbar .button-left-aside:hover .heart {
@@ -804,7 +843,7 @@ main .nav-tabs {
 }
 
 .right-boxes {
-  background-color: #f9fafa;
+  background-color: #F9FAFA;
 }
 
 .right-boxes .card-header {
@@ -812,8 +851,20 @@ main .nav-tabs {
   border: 1px solid #eef0f1;
 }
 
+.right-boxes .card-header:hover {
+  background-color: #f9fafa;
+}
+
 .right-boxes .card-footer {
   background-color: #f9fafa;
+}
+
+.right-boxes .card-footer:hover {
+  background-color: #f9fafa;
+}
+
+.right-boxes .text-small {
+  font-size: smaller;
 }
 
 .right-boxes a {
@@ -837,11 +888,16 @@ main .nav-tabs {
 
 .right-boxes ul li:hover {
   background-color: #fff;
-  color: blue;
+  color: #323EBE;
 }
 
 .right-boxes ul li:hover a {
-  color: blue;
+  color: #323EBE;
+}
+
+.card-img {
+  height: 115px;
+  width: 115px;
 }
 
 .discuss-podcast {
@@ -878,7 +934,7 @@ main .nav-tabs {
 }
 
 .header-primary {
-  background-color: black;
+  background-color: #4b0f0f;
   height: 40px;
 }
 
@@ -894,5 +950,15 @@ main .nav-tabs {
 
 .user-description {
   font-size: 0.75rem;
+}
+
+.card-profile {
+  background-color: #F9FAFA;
+}
+
+.post-aside-right {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 62px;
 }
 /*# sourceMappingURL=style.css.map */
