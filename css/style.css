@@ -923,4 +923,10 @@ main .nav-tabs {
 .user-description {
   font-size: 0.75rem;
 }
+
+.post-aside-right {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 62px;
+}
 /*# sourceMappingURL=style.css.map */
