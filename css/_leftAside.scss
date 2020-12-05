@@ -4,8 +4,13 @@
     &:hover {
         background-color: $asideLeft-active-gray;
         color: $highlight-active;
-        cursor: pointer;
+
+        .padding-left-aside {
+            color:$inactive-gray;;
+        }
+
     }
+
 }
 
 .profilePic {
@@ -14,7 +19,8 @@
 }
 
 .padding-left-aside {
-    padding-left: 2.5rem;
+    padding-left: 1.8rem;
+    color: gray;
 }
 
 .padding-header-my-tags {
@@ -58,6 +64,7 @@
     padding: 0.5rem;
     align-items: center;
     margin-bottom: 1.5rem;
+    
 
     border: none;
     // padding: 0.5rem;
@@ -118,7 +125,7 @@
 
     .button-left-aside {
         margin: 0;
-
+        background-color: none;
         &:hover {
             .heart {
                 background-color: $heart-bg-active;
@@ -144,4 +151,10 @@
 }
 .fix-padding {
     transition: padding 0,4s;
+}
+
+.nav-left-aside {
+    position: sticky;
+    padding-top: 30px;
+    height: 20px;
 }
