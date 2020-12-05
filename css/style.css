@@ -655,12 +655,17 @@ main .nav-tabs {
   color: #323EBE;
 }
 
+.leftAside:hover .padding-left-aside {
+  color: #363D44;
+}
+
 .profilePic {
   border-radius: 100%;
 }
 
 .padding-left-aside {
-  padding-left: 2.5rem;
+  padding-left: 1.8rem;
+  color: gray;
 }
 
 .padding-header-my-tags {
@@ -789,6 +794,13 @@ main .nav-tabs {
 .fix-padding {
   -webkit-transition: padding 0,4s;
   transition: padding 0,4s;
+}
+
+.nav-left-aside {
+  position: -webkit-sticky;
+  position: sticky;
+  padding-top: 30px;
+  height: 20px;
 }
 
 .right-boxes {
