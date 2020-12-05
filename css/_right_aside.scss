@@ -1,12 +1,22 @@
 .right-boxes {
-    background-color: #f9fafa;
+    background-color: $asideRight-bg-color;
     .card-header {
         background-color: #f9fafa;
         border: 1px solid #eef0f1;
+        &:hover{
+            background-color:#f9fafa ;
+        }
     }
     
     .card-footer{
         background-color: #f9fafa;
+        &:hover{
+            background-color: #f9fafa
+        }
+    }
+
+    .text-small{
+        font-size: smaller;
     }
 
     a {
@@ -28,13 +38,17 @@
         }
         li:hover {
             background-color: #fff;
-            color: blue;
+            color:$highlight-active;
         }
 
         li:hover a {
-            color: blue;
+            color:$highlight-active;
         }
     }
+}
+.card-img{
+    height: 115px;
+    width: 115px;
 }
 
 .discuss-podcast {

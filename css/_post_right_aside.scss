@@ -13,7 +13,7 @@
 }
 
 .header-primary {
-    background-color:black;
+    background-color:#4b0f0f;
     height: 40px;
 }
 
@@ -34,3 +34,6 @@
 .user-description{
     font-size: 0.75rem;
 } 
+.card-profile{
+    background-color: $asideRight-bg-color;
+}

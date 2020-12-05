@@ -765,6 +765,7 @@ main .nav-tabs {
 
 .bottom-navbar .button-left-aside {
   margin: 0;
+  background-color: none;
 }
 
 .bottom-navbar .button-left-aside:hover .heart {
@@ -792,7 +793,7 @@ main .nav-tabs {
 }
 
 .right-boxes {
-  background-color: #f9fafa;
+  background-color: #F9FAFA;
 }
 
 .right-boxes .card-header {
@@ -800,8 +801,20 @@ main .nav-tabs {
   border: 1px solid #eef0f1;
 }
 
+.right-boxes .card-header:hover {
+  background-color: #f9fafa;
+}
+
 .right-boxes .card-footer {
   background-color: #f9fafa;
+}
+
+.right-boxes .card-footer:hover {
+  background-color: #f9fafa;
+}
+
+.right-boxes .text-small {
+  font-size: smaller;
 }
 
 .right-boxes a {
@@ -825,11 +838,16 @@ main .nav-tabs {
 
 .right-boxes ul li:hover {
   background-color: #fff;
-  color: blue;
+  color: #323EBE;
 }
 
 .right-boxes ul li:hover a {
-  color: blue;
+  color: #323EBE;
+}
+
+.card-img {
+  height: 115px;
+  width: 115px;
 }
 
 .discuss-podcast {
@@ -866,7 +884,7 @@ main .nav-tabs {
 }
 
 .header-primary {
-  background-color: black;
+  background-color: #4b0f0f;
   height: 40px;
 }
 
@@ -882,5 +900,9 @@ main .nav-tabs {
 
 .user-description {
   font-size: 0.75rem;
+}
+
+.card-profile {
+  background-color: #F9FAFA;
 }
 /*# sourceMappingURL=style.css.map */

@@ -117,7 +117,7 @@
 
     .button-left-aside {
         margin: 0;
-
+        background-color: none;
         &:hover {
             .heart {
                 background-color: $heart-bg-active;
