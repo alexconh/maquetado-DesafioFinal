@@ -379,3 +379,11 @@ main .nav-tabs{
         padding: 1rem!important;
     }
 }
+.dropdown-toggle{
+    color: rgb(8, 9, 10);
+    background-color: rgb(216, 218, 222);
+}
+.dropdown-toggle:hover{
+   background:white;
+   color:rgb(8, 9, 10);
+}

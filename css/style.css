@@ -684,6 +684,16 @@ main .nav-tabs {
   }
 }
 
+.dropdown-toggle {
+  color: #08090a;
+  background-color: #d8dade;
+}
+
+.dropdown-toggle:hover {
+  background: white;
+  color: #08090a;
+}
+
 .leftAside {
   color: black;
 }
