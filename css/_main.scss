@@ -19,8 +19,8 @@ main .nav-tabs{
     background: transparent;
     border-radius: 5px;
     margin-right: 6px;
-
 }
+
 .nav-tabs li:nth-child(6){
     margin-right: -5px;
 }
@@ -43,7 +43,16 @@ main .nav-tabs{
 .nav-links.active:hover .linea{
     left: 0%;
     width: 90%;
-
+}
+.nav-links-icon{
+    color: $inactive-gray;
+    padding:5px 10px;
+    margin-right: 6px;
+}
+.nav-links-icon:hover{
+    color: $highlight-color;/****CLASE GENERAL****/
+    background: rgb(224, 226, 241);
+    text-decoration: none;
 }
 .navbar-heading{
     font-size: 1.25rem;
@@ -67,12 +76,12 @@ main .nav-tabs{
     color: rgb(81, 88, 95);/****CLASE GENERAL****/
     margin-bottom: -10px;
 }
-.single-post p:hover, .date:hover{
+.single-post p:hover{
     color: rgb(8, 9, 10);/****CLASE GENERAL****/
 }
 .single-post .date{
     padding-top: 8px;
-    font-size: 13px;
+    font-size: 0.875rem;
     color: rgb(114, 122, 135);
 }
 .single-post h2{
@@ -191,7 +200,11 @@ main .nav-tabs{
     }
 
 }
-
+.date{
+    padding-top: 8px;
+    font-size: 0.875rem;
+    color: rgb(114, 122, 135);
+}
 .inside-single-post{
     padding: 15px;
     background-color: white;
@@ -235,8 +248,14 @@ main .nav-tabs{
 .profile p{
     margin-bottom: 0;
 }
-.profile .name{
-    padding-right: 30px;
+.profile-user .name{
+    padding-top: 7px;
+    padding-right: 15px;
+    font-weight: 500;
+    &:hover{
+        color: #1E38BB;
+        cursor: pointer;
+    }
 }
 .badge{
     font-weight: 500;
@@ -312,10 +331,10 @@ main .nav-tabs{
     margin-bottom: 10px;
 }
 .discussion textarea:focus {
-border: 2px solid #3B49DF;
--webkit-box-shadow: 1px 1px #3B49DF;
-box-shadow: 1px 1px #3B49DF;
-outline: 0;
+    border: 2px solid #3B49DF;
+    -webkit-box-shadow: 1px 1px #3B49DF;
+    box-shadow: 1px 1px #3B49DF;
+    outline: 0;
 }
 .comment{
     padding: 15px;
@@ -349,4 +368,14 @@ outline: 0;
     background-color: #F9FAFA;
     }
 
+}
+@media (max-width:  767.98px) {
+    .inside-post .media-body {
+        padding: 0!important;
+    }
+}
+@media (max-width: 991.98px) { 
+    .inside-post .media-body {
+        padding: 1rem!important;
+    }
 }
