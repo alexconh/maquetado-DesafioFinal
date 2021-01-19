@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row d-flex justify-content-center mt-5">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <form id="form-new-tag">
+                        
+                        <div class="mb-3">
+                            <label for="name__input" class="form-label">TAG</label>
+                            <input type="text" class="form-control" id="tag__input" placeholder="Put tagname here..."><br>                        </div>
+                        
+                        <div class="alert alert-success d-none" role="alert" id="alert__form">
+                            TAG creado correctamente
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="alert__tag" id="alert"></div>
+                            <button type="button" class="btn btn-primary send__tag">Publish</button>
+                            <button type="button" class="btn btn-secondary clear__tag">Clear Text</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div id="listaCreados"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/addtag.js"></script>
+
+</body>
+</html>
