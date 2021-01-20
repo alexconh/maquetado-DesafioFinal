@@ -45,15 +45,16 @@ $('.prueba').on('click','.clear__post', function() {
 })
 
 /* //delete
-let idPost = "aqui el id del post a borrar"
+let idPOST = "aqui el id del post a borrar"
 $.ajax({
-    url: "https://pruebas-frontend-default-rtdb.firebaseio.com/post/-MRNyLYtUWkoD96xUXPs.json",
+    url: `https://pruebas-frontend-default-rtdb.firebaseio.com/post/${idPOST}.json`,
     method: 'DELETE'
 }).done(function(response) {
    console.log('Se ha eliminado')
 }).fail(function(err){
     console.log(err)
 }) */
+
 
 
 

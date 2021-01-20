@@ -59,7 +59,7 @@ const print_tags = (tags) => {
     let tags_list = ''
     for (item in tags) {
         tags_list += `
-        <a class="nav-link pl-2 leftAside">#${tags[item].tagname}</a>
+        <a class="nav-link pl-2 leftAside" data-id="${item}">#${tags[item].tagname}</a>
         `
         //console.log(tags[item].tagname)
     }

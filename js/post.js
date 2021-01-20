@@ -36,3 +36,7 @@ $(document).ready(function () {
             })
 
 })
+$('.clearForm').on('click', '.clear__tag', function () {
+    $('#form-new-tag').trigger('reset')
+    /* $('#alert').addClass('d-none').removeClass('d-block') */
+})
