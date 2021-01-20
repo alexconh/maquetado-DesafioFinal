@@ -8,6 +8,7 @@ $('.prueba').on('click','.send__post', function() {
     let postObject = {
         title: $('#title__input').val(),
         content: $('#content__input').val(),
+        organization: $('#organization__input').val(),
         urlCover: $('#urlCover__input').val(),
         tag: $('#taglist__select').val(),
         author: $('#author__input').val(),
@@ -53,3 +54,25 @@ $.ajax({
 }).fail(function(err){
     console.log(err)
 }) */
+
+
+
+const print_tags = (tags) => {
+    let tags_list = ''
+    for (item in tags) {
+        tags_list += `
+        <option value="${tags[item].tagname}">${tags[item].tagname}</option>      
+        `
+        //console.log(tags[item].tagname)
+    }
+    // tags_list = `<div class="tags_list d-block">${tags_list}</div>`
+    $('#taglist__select').append(tags_list)
+}
+$.ajax({
+    url: "https://pruebas-frontend-default-rtdb.firebaseio.com/tags/.json"
+}).done(function (tags) {
+    //console.log(posts)
+    print_tags(tags)
+}).fail(function (err) {
+    console.log(err)
+})

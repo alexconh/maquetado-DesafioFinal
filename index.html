@@ -84,7 +84,8 @@
                                     <small>@alexconh</small>
                                 </div>
                             </a>
-                            <a class="nav-link leftAside"><img src="/assets/icons/reading-list.svg" alt=""> Reading List</a>
+                            <a class="nav-link leftAside"><img src="/assets/icons/reading-list.svg" alt=""> Reading
+                                List</a>
                             <a class="nav-link leftAside"><img src="/assets/icons/podcast.svg" alt=""> Podcasts</a>
                             <a class="nav-link leftAside"><img src="/assets/icons/videos.svg" alt=""> Videos</a>
                             <a class="nav-link leftAside"><img src="/assets/icons/tags.svg" alt=""> Tags</a>
@@ -97,12 +98,7 @@
                                 <a class="leftAside padding-my-tags" href="index.html"><img
                                         src="/assets/icons/my-tags.svg" alt=""></a>
                             </header>
-                            <a class="nav-link pl-2 leftAside">#javascript</a>
-                            <a class="nav-link pl-2 leftAside">#python</a>
-                            <a class="nav-link pl-2 leftAside">#machinelearning</a>
-                            <a class="nav-link pl-2 leftAside">#git</a>
-                            <a class="nav-link pl-2 leftAside">#ios</a>
-                            <a class="nav-link pl-2 leftAside">#django</a>
+                            <div id="tags__home"></div>
                         </div>
                         <div class="d-flex align-items-center justify-content-center">
                             <a class="plain" href="index.html">
@@ -115,20 +111,27 @@
                     <div class="col-12 col-md-8 col-lg-6 pl-0">
                         <main class="posts">
                             <div class="d-flex justify-content-between align-content-center">
-                                <a class="nav-links-icon d-md-none" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="24" width="24"><path d="M398.044 29.719C359.712 10.555 309.267 0 256.001 0c-53.271 0-103.719 10.555-142.05 29.721-43.457 21.73-67.39 52.497-67.39 86.635v279.288c0 34.138 23.933 64.906 67.392 86.636C152.285 501.446 202.732 512 256.002 512c53.266 0 103.711-10.555 142.043-29.721 43.46-21.732 67.393-52.498 67.393-86.636V116.355c.001-34.138-23.934-64.904-67.394-86.636zM256.001 46.548c93.229 0 162.889 36.855 162.889 69.808 0 32.953-69.66 69.809-162.889 69.809-93.23 0-162.892-36.857-162.892-69.809 0-32.953 69.661-69.808 162.892-69.808zm162.89 349.095c0 32.953-69.662 69.809-162.891 69.809-93.23 0-162.892-36.856-162.892-69.809v-18.58c6.348 4.292 13.294 8.346 20.844 12.121 38.332 19.167 88.779 29.721 142.05 29.721 53.266 0 103.711-10.555 142.043-29.721 7.552-3.777 14.498-7.829 20.846-12.121v18.58zm.002-93.095h-.002c0 32.953-69.66 69.809-162.889 69.809-93.23 0-162.892-36.857-162.892-69.809v-18.58c6.348 4.292 13.294 8.343 20.844 12.119 38.332 19.168 88.779 29.722 142.05 29.722 53.266 0 103.711-10.555 142.043-29.722 7.552-3.777 14.498-7.829 20.846-12.123v18.584zm0-93.097h-.002c0 32.954-69.66 69.811-162.889 69.811-93.23 0-162.892-36.856-162.892-69.811v-18.579c6.348 4.292 13.294 8.343 20.844 12.118 38.331 19.167 88.779 29.721 142.05 29.721 53.266 0 103.711-10.555 142.043-29.721 7.552-3.777 14.498-7.829 20.846-12.121v18.582z"></path></svg></a>
+                                <a class="nav-links-icon d-md-none" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512" height="24" width="24">
+                                        <path
+                                            d="M398.044 29.719C359.712 10.555 309.267 0 256.001 0c-53.271 0-103.719 10.555-142.05 29.721-43.457 21.73-67.39 52.497-67.39 86.635v279.288c0 34.138 23.933 64.906 67.392 86.636C152.285 501.446 202.732 512 256.002 512c53.266 0 103.711-10.555 142.043-29.721 43.46-21.732 67.393-52.498 67.393-86.636V116.355c.001-34.138-23.934-64.904-67.394-86.636zM256.001 46.548c93.229 0 162.889 36.855 162.889 69.808 0 32.953-69.66 69.809-162.889 69.809-93.23 0-162.892-36.857-162.892-69.809 0-32.953 69.661-69.808 162.892-69.808zm162.89 349.095c0 32.953-69.662 69.809-162.891 69.809-93.23 0-162.892-36.856-162.892-69.809v-18.58c6.348 4.292 13.294 8.346 20.844 12.121 38.332 19.167 88.779 29.721 142.05 29.721 53.266 0 103.711-10.555 142.043-29.721 7.552-3.777 14.498-7.829 20.846-12.121v18.58zm.002-93.095h-.002c0 32.953-69.66 69.809-162.889 69.809-93.23 0-162.892-36.857-162.892-69.809v-18.58c6.348 4.292 13.294 8.343 20.844 12.119 38.332 19.168 88.779 29.722 142.05 29.722 53.266 0 103.711-10.555 142.043-29.722 7.552-3.777 14.498-7.829 20.846-12.123v18.584zm0-93.097h-.002c0 32.954-69.66 69.811-162.889 69.811-93.23 0-162.892-36.856-162.892-69.811v-18.579c6.348 4.292 13.294 8.343 20.844 12.118 38.331 19.167 88.779 29.721 142.05 29.721 53.266 0 103.711-10.555 142.043-29.721 7.552-3.777 14.498-7.829 20.846-12.121v18.582z">
+                                        </path>
+                                    </svg></a>
                                 <h1 class="navbar-heading align-self-start mr-auto ">Posts</h1>
                                 <div class="dropdown d-md-none d-lg-none">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Feed
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Feed
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="#">Week</a>
-                                      <a class="dropdown-item" href="#">Month</a>
-                                      <a class="dropdown-item" href="#">Year</a>
-                                      <a class="dropdown-item" href="#">Infinity</a>
-                                      <a class="dropdown-item" href="#">Latest</a>
+                                        <a class="dropdown-item" href="#">Week</a>
+                                        <a class="dropdown-item" href="#">Month</a>
+                                        <a class="dropdown-item" href="#">Year</a>
+                                        <a class="dropdown-item" href="#">Infinity</a>
+                                        <a class="dropdown-item" href="#">Latest</a>
                                     </div>
-                                  </div>
+                                </div>
                                 <div class="menu-main">
                                     <ul class="nav nav-tabs">
                                         <li class="nav-item d-none d-lg-block">
@@ -149,137 +152,24 @@
                                         <li class="nav-item d-sm-none d-md-block">
                                             <a class="nav-links" href="#">Latest</a>
                                         </li>
-                                        
-                                        <a class="nav-links-icon d-lg-none" href="#"><img src="assets/icons/nav-lightning.svg"></a>
-                                        
+
+                                        <a class="nav-links-icon d-lg-none" href="#"><img
+                                                src="assets/icons/nav-lightning.svg"></a>
+
 
                                     </ul>
 
                                 </div>
-                                
+
 
                             </div>
 
 
-                            <a href="post-test.html" class="text-decoration-none">
-                                <div class="first-post">
-                                    <img src="assets/images/post.jpg" class="post-intro-image" alt="...">
-                                    <article class="media single-post">
-                                        <img src="assets/images/profilepicture.jpg"
-                                            class="post-profile-picture align-self-start mr-3" alt="...">
-                                        <div class="media-body">
-                                            <p>Nick Brinner</p>
-                                            <p class="date">Dec 3 (3 hours ago)</p>
+                            <div class="posts">
 
-                                            <h2 class="mt-0">Good and Bad Practices of Coding in Python</h2>
-
-                                            <ul class="tag-list">
-                                                <li><a><span>#</span>funtional</a></li>
-                                                <li><a><span>#</span>python</a></li>
-                                                <li><a><span>#</span>testing</a></li>
-                                                <li><a><span>#</span>codequality</a></li>
-                                            </ul>
-                                            <div class="post-buttons">
-                                                <ul class="actions">
-                                                    <li>
-                                                        <a class="d-flex post-link">
-                                                            <img src="assets/icons/post-reaction-like.svg"> 11
-                                                            <span class="d-none d-md-block">reactions
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="d-flex post-link">
-                                                            <img src="assets/icons/post-comment.svg"> 2
-                                                            <span class="d-none d-md-block">comments
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                                <div class="right-post-buttons">
-                                                    <div class="reading">5 min read</div>
-                                                    <button type="button" class="btn btn-secondary">Save</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </a>
+                            </div>
 
 
-                            <article class="media single-post">
-                                <img src="assets/images/user02.png" class="post-profile-picture align-self-start mr-3"
-                                    alt="...">
-                                <div class="media-body">
-                                    <p>Nick Brinner</p>
-                                    <p class="date">Dec 3</p>
-
-                                    <h2 class="mt-0">How to use Python Lambda functions: a 5 minute tutorial</h2>
-
-                                    <ul class="tag-list">
-                                        <li><a><span>#</span>funtional</a></li>
-                                        <li><a><span>#</span>python</a></li>
-                                        <li><a><span>#</span>testing</a></li>
-                                    </ul>
-                                    <div class="post-buttons">
-                                        <ul class="actions">
-                                            <li>
-                                                <a class="d-flex post-link">
-                                                    <img src="assets/icons/post-reaction-like.svg"> 14
-                                                    <span class="d-none d-md-block">reactions</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="d-flex post-link">
-                                                    <img src="assets/icons/post-comment.svg"> 8
-                                                    <span class="d-none d-md-block">comments</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="right-post-buttons">
-                                            <div class="reading">5 min read</div>
-                                            <button type="button" class="btn btn-secondary">Save</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="media single-post">
-                                <img src="assets/images/user03.png" class="post-profile-picture align-self-start mr-3"
-                                    alt="...">
-                                <div class="media-body">
-                                    <p>Gracie Gregory</p>
-                                    <p class="date">Dec 1 </p>
-
-                                    <h2 class="mt-0">Arduino with Python on Mac OSX</h2>
-
-                                    <ul class="tag-list">
-                                        <li><a><span>#</span>functional</a></li>
-                                        <li><a><span>#</span>python</a></li>
-                                        <li><a><span>#</span>testing</a></li>
-                                    </ul>
-                                    <div class="post-buttons">
-                                        <ul class="actions">
-                                            <li>
-                                                <a class="d-flex post-link">
-                                                    <img src="assets/icons/post-reaction-like.svg"> 33
-                                                    <span class="d-none d-md-block">reactions</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="d-flex post-link">
-                                                    <img src="assets/icons/post-comment.svg"> 14
-                                                    <span class="d-none d-md-block">comments</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="right-post-buttons">
-                                            <div class="reading">5 min read</div>
-                                            <button type="button" class="btn btn-secondary">Save</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
 
                         </main>
                     </div>
@@ -288,10 +178,11 @@
                             <div class="card p-3 right-boxes  mb-3 d-">
                                 <img src="./assets/images/dev-discuss.jpg" alt="dev-discuss" class="card-img">
                                 <b class="discuss-podcast">Listen to the DevDiscuss Podcast</b>
-                                <small>"Analogies & Visualizations w/ Lydia Hallie & Kevin Kononenko" </br> <a href="#" class="text-decoration-none font-weight-bolder"> →
+                                <small>"Analogies & Visualizations w/ Lydia Hallie & Kevin Kononenko" </br> <a href="#"
+                                        class="text-decoration-none font-weight-bolder"> →
                                         tune
                                         in!</a> </small>
-                                </div>
+                            </div>
 
 
                             <div class="card right-boxes mb-3">
@@ -483,6 +374,9 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
                 integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
                 crossorigin="anonymous"></script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="js/home.js"></script>
 </body>
 
 </html>
