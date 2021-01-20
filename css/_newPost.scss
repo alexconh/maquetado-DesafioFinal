@@ -1,0 +1,46 @@
+.nav-tabs li:nth-child(6){
+    margin-right: -5px;
+}
+.nav-tabs{
+    max-width: 600px;
+    margin-bottom: 20px;
+    border: none;
+    position: relative;
+}
+.nav-links:hover{
+    color: $highlight-color;/****CLASE GENERAL****/
+    background: rgb(224, 226, 241);
+    border: none;
+}
+.nav-links{
+    text-decoration: none;
+    color: $inactive-gray;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 14px 10px;
+    background: transparent;
+    border-radius: 5px;
+    margin-right: 6px;
+}
+
+.span-newPost {
+    font-weight: 500;
+}
+/* .prueba {
+    
+    height:100vh;
+} */
+.prueba-2{
+    overflow: auto;
+    background-color: red;
+    height:85vh;
+}
+
+.prueba-3 {
+    max-height: 50px;
+}
+.invalid-tooltip {
+    top: -2px;
+    background-color: $heart-bg-active  ;
+    border: solid red 3px;
+}

@@ -3,7 +3,7 @@ function clearForm() {
     $('#form-new-post').trigger('reset')
 }
 
-$('#form-new-post').on('click','.send__post', function() {
+$('.prueba').on('click','.send__post', function() {
     let today = new Date().toLocaleDateString()
     let postObject = {
         title: $('#title__input').val(),
@@ -32,13 +32,14 @@ $('#form-new-post').on('click','.send__post', function() {
         clearForm()
 
     }else {
+        console.log('entro a else')
         $('#alert').css('position', 'relative')
         $('#alert').addClass('d-block')
         console.log('no se puede')
     }
 })
 
-$('#form-new-post').on('click','.clear__post', function() {
+$('.prueba').on('click','.clear__post', function() {
     clearForm()
 })
 

@@ -14,6 +14,7 @@
 .btn-primary {
   background-color: #3B49DF;
   border: none;
+  font-weight: 500;
 }
 
 .btn-primary:hover {
@@ -35,6 +36,30 @@ body {
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   background-color: #E2E4E6;
   color: #323EBE;
+}
+
+.btn-secondary.clear__post {
+  background-color: #D2D6DB;
+  color: #363D44;
+  border-color: transparent;
+  font-weight: 500;
+}
+
+.btn-secondary.clear__post:hover {
+  background-color: #B5BDC4;
+  color: #363D44;
+}
+
+.btn-secondary.post-op {
+  background-color: transparent;
+  color: #363D44;
+  border-color: transparent;
+  font-weight: 500;
+}
+
+.btn-secondary.post-op:hover {
+  background-color: #E6E8E8;
+  color: #363D44;
 }
 
 header.header-navbar nav.navbar {
@@ -970,5 +995,58 @@ main .nav-tabs {
   position: -webkit-sticky;
   position: sticky;
   top: 62px;
+}
+
+.nav-tabs li:nth-child(6) {
+  margin-right: -5px;
+}
+
+.nav-tabs {
+  max-width: 600px;
+  margin-bottom: 20px;
+  border: none;
+  position: relative;
+}
+
+.nav-links:hover {
+  color: #3B49DF;
+  /****CLASE GENERAL****/
+  background: #e0e2f1;
+  border: none;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #363D44;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 14px 10px;
+  background: transparent;
+  border-radius: 5px;
+  margin-right: 6px;
+}
+
+.span-newPost {
+  font-weight: 500;
+}
+
+/* .prueba {
+    
+    height:100vh;
+} */
+.prueba-2 {
+  overflow: auto;
+  background-color: red;
+  height: 85vh;
+}
+
+.prueba-3 {
+  max-height: 50px;
+}
+
+.invalid-tooltip {
+  top: -2px;
+  background-color: #ECDADA;
+  border: solid red 3px;
 }
 /*# sourceMappingURL=style.css.map */
