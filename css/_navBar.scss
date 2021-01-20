@@ -93,3 +93,12 @@ header.header-navbar{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  .write-post {
+      color: white;
+      text-decoration: none;
+      &:hover{
+          color: white;
+          text-decoration:none;
+      }
+  }

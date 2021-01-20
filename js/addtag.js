@@ -25,12 +25,16 @@ $(document).ready(function () {
         let tagValue = $('#tag__input').val().toLowerCase()
         if (tagValue === "") {
             $('.alert__tag').text('Ingresa un tag').slideDown()
+            $('#alert').css('position', 'relative')
+            $('#alert').addClass('d-block')
             return false
             //allTags.includes(tagText) === false
         }
         if (allTags.includes(tagValue.toLowerCase()) === true) {
             // comprobar si existe o no el tag
             $('.alert__tag').text('El tag ya existe, intenta con otro').slideDown()
+            $('#alert').css('position', 'relative')
+            $('#alert').addClass('d-block')
             $('#form-new-tag').trigger('reset')
             // si existe, mandar mensaje
         } else {
@@ -44,6 +48,9 @@ $(document).ready(function () {
                 data: JSON.stringify(tagObject)
             }).done(function (response) {
                 $('.alert__tag').text('Tag creado').slideDown()
+                $('#alert').css('position', 'relative')
+                $('#alert').addClass('d-block')
+                $('#alert').addClass('valid-tooltip').removeClass('invalid-tooltip')
                 getTags()
             }).fail(function (err) {
                 console.log(err)
@@ -54,8 +61,9 @@ $(document).ready(function () {
     })
     getTags()
 })
-$('#form-new-tag').on('click', '.clear__tag', function () {
+$('.prueba').on('click', '.clear__tag', function () {
     $('#form-new-tag').trigger('reset')
+    /* $('#alert').addClass('d-none').removeClass('d-block') */
 })
 
 

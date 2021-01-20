@@ -1,3 +1,37 @@
+.close-editor{
+    top:12px;
+    /* left:90vw; */
+    height: 35px;
+    &:hover{
+        background-color: #E6E8E8;
+        color: $logo-active;
+    }
+}
+
+.nav-newPost{
+    padding-top: 12px;
+    height: 65px;
+    a.dev-logo:hover{
+        svg{
+            fill:$logo-active;
+        }
+    }
+    .nav-links{
+        color: $inactive-gray;
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 14px 10px;
+        background: transparent;
+        border-radius: 5px;
+    }
+    .close-editor{
+        height: 35px;
+        &:hover{
+            background-color: #E6E8E8;
+            color: $logo-active;
+        }
+    }
+}
 .nav-tabs li:nth-child(6){
     margin-right: -5px;
 }
@@ -27,20 +61,95 @@
     font-weight: 500;
 }
 /* .prueba {
-    
-    height:100vh;
+      width:100vh;
 } */
 .prueba-2{
     overflow: auto;
-    background-color: red;
-    height:85vh;
+    height:80vh;
 }
 
 .prueba-3 {
     max-height: 50px;
 }
+.valid-tooltip {
+    top: -2px;
+    color: #339900;
+    font-weight: bolder;
+    padding: 18px auto;
+    height: 70px;
+    background-color: #D7F2C7  ;
+    border: solid #339900 2px;
+    box-shadow:2px 2px #339900;
+}
 .invalid-tooltip {
     top: -2px;
-    background-color: $heart-bg-active  ;
-    border: solid red 3px;
+    color: #DC1818;
+    font-weight: bolder;
+    padding: 18px auto;
+    height: 70px;
+    background-color: #FBE7E7  ;
+    border: solid #DC1818 2px;
+    box-shadow:2px 2px #DC1818;
+}
+
+.post-title{
+    font-weight: 600;
+    font-size: 30px;
+    @include tablet {
+        font-size: 35px;
+        font-weight: 900;
+    }
+    @include desktop{
+    font-size: 50px;
+    font-weight: 900;
+    }
+}
+
+.form-control { 
+    background-color: transparent;
+    &:focus{
+        outline:none;
+    }
+    &:active{
+        outline:none;
+    }
+}
+.minutes{
+    background-color: transparent;
+    width:110px;
+    font-size: 15px;
+    &:focus{
+        border: 2px solid $highlight-color;
+        box-shadow:1px 1px $highlight-color;
+        outline:0;
+    }
+    &:active{
+        outline:0;
+    }
+}
+
+.select-tag{
+    background-color: transparent;
+    font-size: 15px;
+    &:focus{
+        border: 2px solid $highlight-color;
+        box-shadow:1px 1px $highlight-color;
+        outline:0;
+    }
+    &:active{
+        outline:0;
+    }
+}
+
+.btn-tag{
+    font-size: smaller;
+    padding: 0;
+    width:90px;
+    height: 35px;
+}
+.url-cover {
+    border: none;
+    color:black;
+    border-radius: 0;
+    background-color: $asideRight-bg-color;
 }

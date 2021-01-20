@@ -42,6 +42,16 @@ body{
     }
 }
 
+.btn-secondary.clear__tag{
+    background-color: $saveBtn-inactive-gray;
+    color: $inactive-gray;
+    border-color: transparent ;
+    font-weight: 500;
+    &:hover{
+        background-color: $saveBtn-active-gray;
+        color: $logo-active;
+    }
+}
 .btn-secondary.post-op{
     background-color: transparent;
     color: $inactive-gray;
