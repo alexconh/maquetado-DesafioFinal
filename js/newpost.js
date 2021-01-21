@@ -3,7 +3,8 @@ function clearForm() {
     $('#form-new-post').trigger('reset')
 }
 
-$('.prueba').on('click','.send__post', function() {
+$('.prueba').on('click','.send__post', function(event) {
+    event.preventDefault()
     let today = new Date().toLocaleDateString()
     let postObject = {
         title: $('#title__input').val(),
@@ -25,10 +26,11 @@ $('.prueba').on('click','.send__post', function() {
         }).done(function() {
             
             //console.log(response)
+            window.location.href = `http://127.0.0.1:5502/index.html`
         }).fail(function(err){
             console.log(err)
         })
-        $('#alert__form').removeClass('d-none')
+        // $('#alert__form').removeClass('d-none')
         $('#alert').addClass('d-none')
         clearForm()
 
@@ -45,15 +47,16 @@ $('.prueba').on('click','.clear__post', function() {
 })
 
 /* //delete
-let idPost = "aqui el id del post a borrar"
+let idPOST = "aqui el id del post a borrar"
 $.ajax({
-    url: "https://pruebas-frontend-default-rtdb.firebaseio.com/post/-MRNyLYtUWkoD96xUXPs.json",
+    url: `https://pruebas-frontend-default-rtdb.firebaseio.com/post/${idPOST}.json`,
     method: 'DELETE'
 }).done(function(response) {
    console.log('Se ha eliminado')
 }).fail(function(err){
     console.log(err)
 }) */
+
 
 
 

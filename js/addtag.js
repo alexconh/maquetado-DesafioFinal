@@ -15,16 +15,17 @@ const getTags = () => {
 
 
 $(document).ready(function () {
+
     // obtener los tags existentes
     // guardarlos en una variable
     //console.log(allTags)
     //["mytag", mytag 2", mytag 3"]
     // escuchar el evento de crear
-    $('.send__tag').click(function () {
+    $('.send__tag').click(function() {
 
         let tagValue = $('#tag__input').val().toLowerCase()
         if (tagValue === "") {
-            $('.alert__tag').text('Ingresa un tag').slideDown()
+            $('.alert__tag').text('Please enter a valid tagname').slideDown()
             $('#alert').css('position', 'relative')
             $('#alert').addClass('d-block')
             return false
@@ -32,9 +33,10 @@ $(document).ready(function () {
         }
         if (allTags.includes(tagValue.toLowerCase()) === true) {
             // comprobar si existe o no el tag
-            $('.alert__tag').text('El tag ya existe, intenta con otro').slideDown()
+            $('.alert__tag').text('Woops! This TAG already exist, try another one.')
             $('#alert').css('position', 'relative')
             $('#alert').addClass('d-block')
+
             $('#form-new-tag').trigger('reset')
             // si existe, mandar mensaje
         } else {
@@ -47,14 +49,14 @@ $(document).ready(function () {
                 method: 'POST',
                 data: JSON.stringify(tagObject)
             }).done(function (response) {
-                $('.alert__tag').text('Tag creado').slideDown()
+                $('.alert__tag').text('Tag created successfully ').slideDown()
                 $('#alert').css('position', 'relative')
                 $('#alert').addClass('d-block')
                 $('#alert').addClass('valid-tooltip').removeClass('invalid-tooltip')
                 getTags()
             }).fail(function (err) {
                 console.log(err)
-                $('.alert__tag').text('No se pudo crear el tag').slideDown()
+                $('.alert__tag').text('Error try again').slideDown()
             })
         }
         

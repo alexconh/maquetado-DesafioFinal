@@ -28,9 +28,8 @@
                             aria-label="Search">
                     </form>
                 </div>
-                <div class="nav-right d-flex align-items-center">
-                    <button type="button" class="d-none d-md-flex btn btn-primary btn-lg btn-nav">Write
-                        a post</button>
+                <div class="nav-right d-flex align-items-center edit-btn">
+                    <button type="button" class="d-none d-md-flex btn btn-primary btn-lg btn-nav edit-post"><a class="write-post">Edit post</a></button>
                     <a href="#" class="px-2 pt-1 navBar-icon rounded-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="#4D5760" width="24" height="24"
                             viewBox="0 0 24 24" role="img" aria-labelledby="aj1yd4ke0z0zt7463hs6nyz1bujl31yr"
@@ -169,7 +168,7 @@
 
                     <div class="col-12 col-md-11 col-lg-8 offset-md-1">
                         <main class="inside-post">
-                            <img id="coverPhoto" src="assets/images/post.jpg" class="inside-post-image" alt="...">
+                            <img id="coverPhoto" src="" class="inside-post-image" alt="...">
                             <article class="inside-single-post">
                                 <div class="media-body">
                                     <h1 class="mt-0"></h1>
@@ -341,7 +340,7 @@
                             <a href="#" class="d-inline-block p-2">Privacy Policy</a>
                             <a href="#" class="d-inline-block p-2">Terms of use</a>
                             <a href="#" class="d-inline-block p-2">Contact</a>
-                            <a href="#" class="d-inline-block p-2 font-weight-bolder">Write a post</a>
+                            <a href="new-post.html" class="d-inline-block p-2 font-weight-bolder">Write a post</a>
                             <div class="footer-social-media">
                                 <a href="#" class="d-inline-block px-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="#64707D" width="24" height="24"
@@ -442,6 +441,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/post.js"></script>
+    <script src="js/edit-post.js"></script>
+
 </body>
 
 </html>

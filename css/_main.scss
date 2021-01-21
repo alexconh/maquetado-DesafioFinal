@@ -84,14 +84,17 @@ main .nav-tabs{
     font-size: 0.875rem;
     color: rgb(114, 122, 135);
 }
-.single-post h2{
+.single-post h2{ 
+    a{
     color: rgb(8, 9, 10);/****CLASE GENERAL****/
     font-size: 30px;
     font-weight: 700;
     padding-top: 10px;
-}
-.single-post h2:hover{
-    color: $highlight-color;/****CLASE GENERAL****/
+    &:hover{
+        color: $highlight-color;
+        text-decoration: none;
+    }
+    }
 }
 .single-post .tag-list{
     font-size: 0.876rem;
