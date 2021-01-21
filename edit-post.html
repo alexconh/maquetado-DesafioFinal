@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="container p-0 mt-0">
+
+            <div class="prueba row d-flex justify-content-center position-relative">
+                <!-- <a class="position-absolute d-none d-lg-block rounded close-editor" href="index.html"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                        aria-labelledby="as1mn15llu5e032u2pgzlc6yhvss2myk" class="crayons-icon">
+                        <title id="as1mn15llu5e032u2pgzlc6yhvss2myk">Close the editor</title>
+                        <path
+                            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636l4.95 4.95z">
+                        </path>
+                    </svg></a> -->
+                <div
+                    class="col-12 col-md-9 col-lg-8 d-flex align-items-md-baseline justify-content-between nav-newPost">
+                    <div class="d-flex align-items-center">
+                        <a href="index.html" class="d-none d-md-block dev-logo">
+                            <svg width="50" height="40" viewBox="0 0 50 40" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="50" height="40" rx="3"></rect>
+                                <path
+                                    d="M19.099 23.508c0 1.31-.423 2.388-1.27 3.234-.838.839-1.942 1.258-3.312 1.258h-4.403V12.277h4.492c1.31 0 2.385.423 3.224 1.27.846.838 1.269 1.912 1.269 3.223v6.738zm-2.808 0V16.77c0-.562-.187-.981-.562-1.258-.374-.285-.748-.427-1.122-.427h-1.685v10.107h1.684c.375 0 .75-.138 1.123-.415.375-.285.562-.708.562-1.27zM28.185 28h-5.896c-.562 0-1.03-.187-1.404-.561-.375-.375-.562-.843-.562-1.404V14.243c0-.562.187-1.03.562-1.404.374-.375.842-.562 1.404-.562h5.896v2.808H23.13v3.65h3.088v2.808h-3.088v3.65h5.054V28zm7.12 0c-.936 0-1.684-.655-2.246-1.965l-3.65-13.758h3.089l2.807 10.804 2.808-10.804H41.2l-3.65 13.758C36.99 27.345 36.241 28 35.305 28z"
+                                    style="fill: white"></path>
+                            </svg>
+                        </a>
+                        <div class="mx-3 d-none d-md-block"><span class="span-newPost">Write a new post</span></div>
+                    </div>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item d-block">
+                            <a class="nav-links active" href="#">Edit<span class="linea"></span></a>
+                        </li>
+                        <li class="nav-item d-block">
+                            <a class="nav-links" href="#">Preview</a>
+                        </li>
+                        <li class="rounded d-block close-editor">
+                            <a class="close-edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" role="img" aria-labelledby="as1mn15llu5e032u2pgzlc6yhvss2myk"
+                                    class="crayons-icon">
+                                    <title id="as1mn15llu5e032u2pgzlc6yhvss2myk">Close the editor</title>
+                                    <path
+                                        d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636l4.95 4.95z">
+                                    </path>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="prueba-2 col-12 col-md-9 col-lg-7 offset-lg-1 bg-white border border-1 rounded p-0">
+
+                    <div class="invalid-tooltip mx-0" id="alert">
+                        Whoops, something went wrong:
+                        <li class="text-dark fw-lighter"> <span class="fw-bolder">∙</span> Please fill all the inputs
+                        </li>
+                    </div>
+                    <form id="form-new-post">
+                        <div class="mx-3 mb-3">
+                            <!-- <label for="name__input" class="form-label">Post</label> -->
+                            <input type="text" class="form-control border border-0 mt-5 post-title" id="title__input"
+                                placeholder="New post title here..." required><br>
+                            <textarea class="form-control font-monospace fs-5 border border-0" id="content__input"
+                                placeholder="Write your post content here..." style="height: 90px; resize: none;"
+                                required></textarea>
+                            <input type="text" class="form-control border border-0 font-monospace"
+                                id="organization__input" placeholder="Organization name..." required><br>
+                        </div>
+                        <input type="text" class="form-control url-cover" id="urlCover__input"
+                            placeholder="Paste the URL of your cover image..." required><br>
+                        <div class="mx-3">
+                            <input type="text" class="font-monospace form-control border-0" id="author__input"
+                                placeholder="Author's name..." required>
+                            <div class="mb-3">
+                                <input type="number" class="font-monospace pr-0 form-control minutes" id="time__input"
+                                    placeholder="Reading time (in minutes)" style="min-width: 250px;" required>
+                            </div>
+                            <div class="mb-1">
+                                <select class="font-monospace form-select select-tag" id="taglist__select" required>
+                                    <option selected>Select a Tag</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-tag new-tag">
+                                <a class="text-decoration-none text-white">Add new Tag</a></button>
+                            <div class="alert alert-success d-none" role="alert" id="alert__form">
+                                The tag was created successfully
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-9 col-lg-7 offset-lg-1 p-0 my-1 prueba-3">
+                    <!-- <div class="invalid-tooltip" id="alert">
+                        Please fill all the inputs
+                    </div> -->
+                    <button type="button" class="btn btn-primary update__post">Update</button>
+                    <button type="button" class="btn btn-secondary clear__post">Revert changes</button>
+                    <button class="btn btn-secondary post-op" title="Post options" type="button" wfd-id="22218"><svg
+                            width="24" class="crayons-icon" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="75abcb76478519ca4eb9">
+                            <title id="75abcb76478519ca4eb9">Post options</title>
+                            <path
+                                d="M12 1l9.5 5.5v11L12 23l-9.5-5.5v-11L12 1zm0 2.311L4.5 7.653v8.694l7.5 4.342 7.5-4.342V7.653L12 3.311zM12 16a4 4 0 110-8 4 4 0 010 8zm0-2a2 2 0 100-4 2 2 0 000 4z">
+                            </path>
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/newpost.js"></script>
+    <script src="js/edit-post.js"></script>
+
+</body>
+
+</html>

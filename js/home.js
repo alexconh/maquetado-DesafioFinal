@@ -1,6 +1,13 @@
 const print_posts = (posts) => {
     let posts_list = ''
+    let counter = 1
     for (id in posts) {
+        if(counter === Object.keys(posts).length) {
+            posts_list += `
+            <img src="${posts[id].urlCover}" class="post-profile-picture align-self-start mr-3"
+            alt="...">
+            `
+        }
         posts_list += `
             <article data-id="${id}" class="media single-post automatic-post">
                 <img src="assets/images/profilepicture.jpg" class="post-profile-picture align-self-start mr-3"
@@ -8,7 +15,7 @@ const print_posts = (posts) => {
                 <div class="media-body">
                     <p>${posts[id].author} for ${posts[id].organization}</p>
                     <p class="date">${posts[id].date} </p>
-                    <h2 class="mt-0"><a href="post-test.html?id=${id}" data-id="${id}">${posts[id].title}</a></h2>
+                    <h2 class="mt-0"><a class="text-decoration-none anchor-id" href="post-test.html?id=${id}" data-id="${id}">${posts[id].title}</a></h2>
                     <ul class="tag-list">
                         <li><a><span>#</span>functional</a></li>
                         <li><a><span>#</span>python</a></li>
@@ -38,10 +45,14 @@ const print_posts = (posts) => {
             </article>
         `
         //console.log(id)
+        $('.posts').prepend(posts_list)
+        posts_list = ''
+        counter++
     }
     // tags_list = `<div class="tags_list d-block">${tags_list}</div>`
-    $('.posts').append(posts_list)
+
 }
+
 const obtain_posts = () => {
     $.ajax({
         url: "https://pruebas-frontend-default-rtdb.firebaseio.com/post/.json",
@@ -73,4 +84,10 @@ $.ajax({
     print_tags(tags)
 }).fail(function (err) {
     console.log(err)
+})
+
+$('.posts').on('click','.automatic-post', function(){
+    let id_post = $(this).data('id')
+    //console.log( `/post-test.html?id=${id_post}` )
+    window.location.href = `http://127.0.0.1:5502/post-test.html?id=${id_post}`
 })

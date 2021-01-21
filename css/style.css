@@ -363,7 +363,7 @@ main .nav-tabs {
   color: #727a87;
 }
 
-.single-post h2 {
+.single-post h2 a {
   color: #08090a;
   /****CLASE GENERAL****/
   font-size: 30px;
@@ -371,9 +371,9 @@ main .nav-tabs {
   padding-top: 10px;
 }
 
-.single-post h2:hover {
+.single-post h2 a:hover {
   color: #3B49DF;
-  /****CLASE GENERAL****/
+  text-decoration: none;
 }
 
 .single-post .tag-list {
