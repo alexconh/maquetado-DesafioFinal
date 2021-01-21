@@ -108,10 +108,11 @@
 .form-control { 
     background-color: transparent;
     &:focus{
-        outline:none;
+        outline:none!important;
+        box-shadow: none;
     }
     &:active{
-        outline:none;
+        outline:none!important;
     }
 }
 .minutes{
@@ -152,4 +153,14 @@
     color:black;
     border-radius: 0;
     background-color: $asideRight-bg-color;
+    &:focus{
+        background-color: $asideRight-bg-color;
+        box-shadow:none;
+        outline:0;
+    }
+    &:active{
+        background-color: $asideRight-bg-color;
+        box-shadow:none;
+        outline:0;
+    }
 }
