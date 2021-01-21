@@ -4,7 +4,7 @@ const print_posts = (posts) => {
     for (id in posts) {
         if(counter === Object.keys(posts).length) {
             posts_list += `
-            <img src="${posts[id].urlCover}" class="post-profile-picture align-self-start mr-3"
+            <img src="${posts[id].urlCover}" class="post-intro-image"
             alt="...">
             `
         }
