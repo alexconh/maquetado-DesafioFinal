@@ -1150,11 +1150,13 @@ main .nav-tabs {
 }
 
 .form-control:focus {
-  outline: none;
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .form-control:active {
-  outline: none;
+  outline: none !important;
 }
 
 .minutes {
@@ -1202,5 +1204,19 @@ main .nav-tabs {
   color: black;
   border-radius: 0;
   background-color: #F9FAFA;
+}
+
+.url-cover:focus {
+  background-color: #F9FAFA;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+}
+
+.url-cover:active {
+  background-color: #F9FAFA;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
 }
 /*# sourceMappingURL=style.css.map */
